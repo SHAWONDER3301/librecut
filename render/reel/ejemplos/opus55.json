@@ -1,0 +1,40 @@
+{
+  "salida": "Opus-5.5-reel.mp4",
+  "formato": "horizontal",
+  "paleta": "naranja",
+  "voz": "es-MX-JorgeNeural",
+  "velocidad": "+25%",
+  "pausa": 0.3,
+  "marca": { "letra": "C", "texto": "Claude · Opus 5.5" },
+  "escenas": [
+    {
+      "etiqueta": "ANTHROPIC", "titulo": "Claude *Opus 5.5*", "diagrama": "nucleo",
+      "voz": "Te presento a Claude Opus cinco punto cinco, el modelo más potente de Anthropic.",
+      "datos": { "chips": ["Razona", "Programa", "Entiende", "Actúa"] }
+    },
+    {
+      "etiqueta": "RAZONAMIENTO", "titulo": "Piensa *paso a paso*", "diagrama": "arbol",
+      "voz": "Razona mejor: desmenuza los problemas difíciles y piensa paso a paso antes de responder."
+    },
+    {
+      "etiqueta": "CÓDIGO", "titulo": "Programa y *se corrige*", "diagrama": "codigo",
+      "voz": "Programa como un crack: escribe código, lo ejecuta, lo prueba y corrige sus propios errores."
+    },
+    {
+      "etiqueta": "AGENTE", "titulo": "Hace *tareas* por ti", "diagrama": "agente",
+      "voz": "Y actúa como un agente: usa herramientas y completa tareas de varios pasos por ti."
+    },
+    {
+      "etiqueta": "MULTIMODAL", "titulo": "Texto, imagen y *voz*", "diagrama": "entradas",
+      "voz": "Entiende texto, imágenes y documentos enormes sin perder el hilo."
+    },
+    {
+      "etiqueta": "VELOCIDAD", "titulo": "*Modo rápido*", "diagrama": "velocidad",
+      "voz": "¿Tienes prisa? Con el modo rápido responde al instante."
+    },
+    {
+      "etiqueta": "EMPIEZA", "titulo": "Construye lo que *imaginas*", "diagrama": "construir",
+      "voz": "Claude Opus cinco punto cinco. Inteligencia para construir lo que imaginas."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "salida": "Privacidad-reel.mp4",
+  "formato": "horizontal",
+  "paleta": "cian",
+  "voz": "es-MX-JorgeNeural",
+  "velocidad": "+22%",
+  "pausa": 0.3,
+  "marca": { "letra": "P", "texto": "Privacidad digital" },
+  "escenas": [
+    {
+      "etiqueta": "PRIVACIDAD", "titulo": "Tu vida es *digital*", "diagrama": "nucleo",
+      "voz": "Cada día dejas un rastro: tus mensajes, tus fotos, tu ubicación y lo que compras.",
+      "datos": { "chips": ["Mensajes", "Fotos", "Ubicación", "Compras"] }
+    },
+    {
+      "etiqueta": "EL PROBLEMA", "titulo": "Te siguen *a diario*", "diagrama": "stat",
+      "voz": "Una sola página web puede esconder decenas de rastreadores que registran todo lo que haces.",
+      "datos": { "valor": 70, "sufijo": "+", "etiqueta": "RASTREADORES", "detalle": "en una sola página" }
+    },
+    {
+      "etiqueta": "COMPARA", "titulo": "Cuánto *se filtra*", "diagrama": "comparar",
+      "voz": "Ojo: el modo incógnito no basta. Un navegador privado bloquea casi todo el rastreo.",
+      "datos": { "titulo": "DATOS QUE SE FILTRAN", "unidad": "%", "mejor": "SEGURO",
+        "filas": [
+          { "texto": "Navegador normal", "valor": 100 },
+          { "texto": "Modo incógnito", "valor": 72 },
+          { "texto": "Navegador privado", "valor": 12, "destacado": true }
+        ] }
+    },
+    {
+      "etiqueta": "HÁBITOS", "titulo": "Tres *escudos*", "diagrama": "lista",
+      "voz": "Tres escudos básicos: un gestor de contraseñas, la verificación en dos pasos y revisar qué permisos das.",
+      "datos": { "items": [
+        { "icono": "🔑", "texto": "Contraseñas únicas", "detalle": "Una por sitio, con un gestor" },
+        { "icono": "📲", "texto": "Doble verificación", "detalle": "Un código además de la clave" },
+        { "icono": "⚙", "texto": "Revisa permisos", "detalle": "Cámara, micro y ubicación" }
+      ] }
+    },
+    {
+      "etiqueta": "EMPIEZA", "titulo": "En *tres pasos*", "diagrama": "pasos",
+      "voz": "Empieza hoy: revisa tus cuentas, bloquea los rastreadores y cifra tus mensajes.",
+      "datos": { "pasos": [
+        { "icono": "🔍", "texto": "Revisa" },
+        { "icono": "🛡", "texto": "Bloquea" },
+        { "icono": "🔒", "texto": "Cifra" }
+      ] }
+    },
+    {
+      "etiqueta": "TU CONTROL", "titulo": "Navega *tranquilo*", "diagrama": "construir",
+      "voz": "Con pocos cambios recuperas el control. Tu vida digital vuelve a ser solo tuya.",
+      "datos": { "chips": ["Navega", "Chatea", "Compra", "Crea"] }
+    }
+  ]
+}

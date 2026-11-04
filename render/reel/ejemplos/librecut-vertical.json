@@ -1,0 +1,35 @@
+{
+  "salida": "LibreCut-reel-demo.mp4",
+  "formato": "vertical",
+  "paleta": "morado",
+  "voz": "es-MX-JorgeNeural",
+  "velocidad": "+25%",
+  "marca": { "letra": "L", "texto": "LibreCut" },
+  "escenas": [
+    {
+      "etiqueta": "CÓDIGO ABIERTO", "titulo": "Edita vídeo *gratis*", "diagrama": "stat",
+      "voz": "LibreCut es un editor de vídeo cien por ciento gratis y de código abierto.",
+      "datos": { "valor": 100, "sufijo": "%", "etiqueta": "GRATIS", "detalle": "Sin cuenta · Sin telemetría" }
+    },
+    {
+      "etiqueta": "FUNCIONES", "titulo": "Todo lo *esencial*", "diagrama": "lista",
+      "voz": "Corta, añade textos animados, transiciones y exporta hasta 1080p a 120 fotogramas.",
+      "datos": { "items": [
+        { "icono": "✂", "texto": "Cortes y pistas", "detalle": "Línea de tiempo multipista" },
+        { "icono": "T", "texto": "Textos animados", "detalle": "Entradas, salidas y karaoke" },
+        { "icono": "⚡", "texto": "1080p · 120 fps", "detalle": "Exporta con FFmpeg" }
+      ] }
+    },
+    {
+      "etiqueta": "PRIVACIDAD", "titulo": "Tus vídeos, *en local*", "diagrama": "comparar",
+      "voz": "Todo se procesa en tu equipo: nada se sube a la nube.",
+      "datos": { "titulo": "DATOS QUE SALEN DE TU PC", "unidad": "%", "mejor": "LOCAL",
+        "filas": [ { "texto": "Editor en la nube", "valor": 100 }, { "texto": "App con cuenta", "valor": 60 }, { "texto": "LibreCut", "valor": 0, "destacado": true } ] }
+    },
+    {
+      "etiqueta": "CÓMO EMPEZAR", "titulo": "Listo en *3 pasos*", "diagrama": "pasos",
+      "voz": "Descárgalo, importa tus clips y exporta. Así de fácil.",
+      "datos": { "pasos": [ { "icono": "⬇", "texto": "Descarga" }, { "icono": "🎞", "texto": "Importa" }, { "icono": "🚀", "texto": "Exporta" } ] }
+    }
+  ]
+}

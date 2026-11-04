@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; img-src 'self' data: media: blob:; media-src 'self' media: blob: data:; style-src 'self'; script-src 'self';" />
+  <title>LibreCut</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header id="toolbar">
+    <div class="brand">Libre<span>Cut</span></div>
+    <div class="tools">
+      <button id="btn-import" class="btn">Importar</button>
+      <button id="btn-text" class="btn" title="Añadir texto en el cursor">Texto</button>
+      <button id="btn-split" class="btn" title="Dividir en el cursor (S)">Dividir</button>
+      <button id="btn-silence" class="btn" title="Quitar silencios del clip seleccionado">Quitar silencios</button>
+      <button id="btn-delete" class="btn" title="Eliminar clip (Supr)">Eliminar</button>
+      <span class="sep"></span>
+      <label class="field">Resolución
+        <select id="sel-res">
+          <option value="1920x1080" selected>1920×1080 (16:9)</option>
+          <option value="1280x720">1280×720 (16:9)</option>
+          <option value="1080x1920">1080×1920 (9:16)</option>
+          <option value="720x1280">720×1280 (9:16)</option>
+          <option value="1080x1080">1080×1080 (1:1)</option>
+        </select>
+      </label>
+      <label class="field">FPS
+        <select id="sel-fps">
+          <option value="24">24</option>
+          <option value="30" selected>30</option>
+          <option value="60">60</option>
+          <option value="120">120</option>
+        </select>
+      </label>
+      <label class="field">Calidad
+        <select id="sel-quality">
+          <option value="alta" selected>Alta</option>
+          <option value="media">Media</option>
+          <option value="rapida">Rápida</option>
+        </select>
+      </label>
+      <span class="sep"></span>
+      <button id="btn-save" class="btn">Guardar</button>
+      <button id="btn-open" class="btn">Abrir</button>
+      <button id="btn-export" class="btn btn-accent">Exportar</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="bin">
+      <h2>Medios</h2>
+      <div id="bin-list" class="bin-list">
+        <p class="empty">Importa vídeo, audio o imágenes para empezar.</p>
+      </div>
+    </section>
+
+    <section id="stage">
+      <div id="preview-wrap">
+        <video id="preview" playsinline></video>
+        <div id="preview-empty" class="preview-empty">Sin clip bajo el cursor</div>
+      </div>
+      <div id="transport">
+        <button id="btn-play" class="btn">▶</button>
+        <span id="time-cur" class="time">00:00.000</span>
+        <span class="time-sep">/</span>
+        <span id="time-total" class="time">00:00.000</span>
+        <div class="spacer"></div>
+        <label class="field">Zoom
+          <input id="zoom" type="range" min="20" max="400" value="100" />
+        </label>
+      </div>
+    </section>
+
+    <aside id="inspector">
+      <h2>Clip</h2>
+      <div id="inspector-body">
+        <p class="empty">Selecciona un clip.</p>
+      </div>
+    </aside>
+  </main>
+
+  <section id="timeline">
+    <div id="ruler"></div>
+    <div id="tracks"></div>
+    <div id="playhead"></div>
+  </section>
+
+  <div id="export-modal" class="modal hidden">
+    <div class="modal-card">
+      <h3>Exportando…</h3>
+      <div class="progress"><div id="progress-bar"></div></div>
+      <div id="export-status" class="export-status">Preparando…</div>
+      <div class="modal-actions">
+        <button id="btn-cancel-export" class="btn">Cancelar</button>
+        <button id="btn-close-export" class="btn hidden">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

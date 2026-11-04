@@ -1,0 +1,15 @@
+<!doctype html><html><head><meta charset="utf8"><style>
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#0d0d16}
+#box{position:absolute;width:320px;height:320px;background:#6d5cff;border-radius:48px;left:380px;top:300px}
+#t{position:absolute;width:100%;text-align:center;color:#fff;font:800 100px system-ui,sans-serif;top:1350px}
+</style></head><body>
+<div id="box"></div><div id="t">Hola</div>
+<script>
+window.seek=function(t){
+  var p=Math.min(t,1), e=1-Math.pow(1-p,3); // easeOutCubic
+  document.getElementById('box').style.top=(300+e*700)+'px';
+  document.getElementById('box').style.transform='rotate('+(e*180)+'deg)';
+  document.getElementById('t').style.opacity=Math.min(1,t/0.8);
+};
+window.seek(0);
+</script></body></html>
