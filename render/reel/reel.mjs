@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+// LibreCut · código original © 2026 $HAWONDER · github.com/SHAWONDER3301/librecut
 // Reel explicativo de LibreCut: guion JSON -> voz neural con tiempos por palabra
 // (edge-tts) -> escena HTML animada -> MP4 con el motor HTML de LibreCut.
 //

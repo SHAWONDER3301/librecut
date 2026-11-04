@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 'use strict';
+// LibreCut · código original © 2026 $HAWONDER · github.com/SHAWONDER3301/librecut
 
 // LibreCut CLI — operar el editor sin GUI (pensado para automatización / agentes).
 //

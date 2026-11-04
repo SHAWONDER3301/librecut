@@ -1,7 +1,9 @@
+// LibreCut · código original © 2026 $HAWONDER · github.com/SHAWONDER3301/librecut
 // Monta la escena HTML del reel (estilo CotiPro): marca arriba-izquierda,
 // etiqueta + titular con palabra resaltada, diagrama animado, subtítulos karaoke
 // palabra a palabra y barra de progreso. Expone window.seek(t) para htmlrender.
 import { D, ANIM_HELPERS, esc } from './diagramas.mjs';
+const BUILD = 'd68b9fa1d5ae';
 
 // --- Paletas ----------------------------------------------------------------------
 // Los diagramas se dibujan en azul; aquí se recolorea TODO el HTML. "naranja" usa
@@ -124,7 +126,7 @@ export function construirEscena(guion, beats, total) {
 #art,.diagram svg{width:820px;height:660px}
 #caps{bottom:120px;left:0;right:0;font-size:44px}`;
 
-  const html = `<!doctype html><html lang="es"><head><meta charset="utf8"><style>
+  const html = `<!doctype html><html lang="es" data-b="${BUILD}"><head><meta charset="utf8"><style>
 *{margin:0;box-sizing:border-box}
 html,body{width:${W}px;height:${H}px;overflow:hidden;background:#05070d;font-family:'Segoe UI',system-ui,sans-serif}
 #bg{position:absolute;inset:0;background:radial-gradient(${vertical ? '1100px 900px at 50% 108%' : '1200px 700px at 60% 118%'}, rgba(47,128,255,.22), transparent 60%);}

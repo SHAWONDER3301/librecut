@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "description": "Editor de vídeo local, de código abierto, sin cuenta ni telemetría. Export hasta 1080p120 con FFmpeg nativo.",
   "license": "MIT",
+  "author": "$HAWONDER <342731082+SHAWONDER3301@users.noreply.github.com>",
+  "homepage": "https://github.com/SHAWONDER3301/librecut",
   "private": true,
+  "buildId": "d68b9fa1d5ae24316486cba17b782d647e7ecc30dcdf7ebbeca16c53fb9c5a2c",
   "main": "electron/main.js",
   "type": "commonjs",
   "bin": {

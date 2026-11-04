@@ -1,3 +1,4 @@
+// LibreCut · código original © 2026 $HAWONDER · github.com/SHAWONDER3301/librecut
 // Biblioteca de diagramas animados para los reels explicativos de LibreCut.
 //
 // Cada diagrama es { design, min?, def, svg(p), anim }:
